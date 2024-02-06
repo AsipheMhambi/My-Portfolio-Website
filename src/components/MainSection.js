@@ -6,9 +6,13 @@ const MainSection = () => {
     <section className="main" id="main">
       <div className="content">
         <h2>
-          Hello, I'm
+          Hello, I am
           <br />
           <span>Asiphe Mhambi</span>
+          <br />
+          <br />
+          <br />
+          I am a Junior Software Developer specializing in
         </h2>
         <div className="animated-text">
           <h3>Web Designer</h3>

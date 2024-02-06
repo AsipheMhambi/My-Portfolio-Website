@@ -3,7 +3,7 @@ import React from 'react';
 const AboutSection = () => {
   return (
     <section className="about" id="about">
-      {/* About section content */}
+      {/* About section contents */}
     </section>
   );
 };

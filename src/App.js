@@ -10,14 +10,10 @@ import ContactSection from './components/ContactSection';
 import FooterSection from './components/FooterSection';
 
 const App = () => {
-  const toggleMenu = () => {
-    console.log('Toggle menu clicked');
-  };
-
   return (
     <div>
       
-      <Header toggleMenu={toggleMenu}/>
+      <Header />
       <MainSection />
       <AboutSection />
       <SkillsSection />
