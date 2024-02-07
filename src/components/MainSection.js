@@ -1,5 +1,6 @@
 // src/Main.js
 import React from 'react';
+import image from '../images/abt.jpg';
 
 const MainSection = () => {
   return (
@@ -9,8 +10,6 @@ const MainSection = () => {
           Hello, I am
           <br />
           <span>Asiphe Mhambi</span>
-          <br />
-          <br />
           <br />
           I am a Junior Software Developer specializing in
         </h2>
@@ -28,6 +27,9 @@ const MainSection = () => {
           </a>
         </div>
       </div>
+      <div className="abtImage">
+        <img src={image} alt="Asiphe Mhambi" />
+        </div>
     </section>
   );
 };
