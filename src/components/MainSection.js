@@ -27,9 +27,12 @@ const MainSection = () => {
           </a>
         </div>
       </div>
+      <div className='abtImageContainer'>
       <div className="abtImage">
         <img src={image} alt="Asiphe Mhambi" />
+        <button className="btn">Download CV</button>
         </div>
+      </div>   
     </section>
   );
 };
