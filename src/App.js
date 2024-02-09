@@ -1,12 +1,13 @@
 // src/App.js
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
-import MainSection from './components/MainSection';
-import AboutSection from './components/AboutSection';
-import SkillsSection from './components/SkillsSection';
-import ProjectsSection from './components/ProjectsSection';
-import ContactSection from './components/ContactSection';
+import './components/Home/Main.css';
+import Header from './components/Home/Header';
+import MainSection from './components/Home/MainSection';
+import AboutSection from './components/About/AboutSection';
+import SkillsSection from './components/Skills/SkillsSection';
+import ProjectsSection from './components/Projects/ProjectsSection';
+import ContactSection from './components/Contact/ContactSection';
 import FooterSection from './components/FooterSection';
 
 const App = () => {

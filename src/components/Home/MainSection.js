@@ -1,6 +1,6 @@
 // src/Main.js
 import React from 'react';
-import image from '../images/abt.jpg';
+import image from './images/abt.jpg';
 import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 
