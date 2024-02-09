@@ -17,6 +17,7 @@
   overflow: hidden;
   justify-content: space-between;
   align-items: center;
+  background-color: #CACAC6;
 }
 
 .main .content {
@@ -26,11 +27,11 @@
 }
 
 .main .content h2 {
-  color: black;
+  color: #0c0c0c;
   font-size: 2em;
   font-weight: 500;
-  text-align: center;
-  margin-right: 40px;
+  text-align: left;
+  margin-left: 70px;
 }
 
 .main .content h2 span {
@@ -44,11 +45,12 @@
   height: 70px;
   overflow: hidden;
   text-align: center;
+  margin-left: 200px;
 }
 
 .animated-text h3{
   color: #4e9eff;
-  font-size: 3em;
+  font-size: 2.8em;
   font-weight: 700;
   line-height: 70px;
   letter-spacing: 1px;
@@ -80,7 +82,7 @@
 header {
   z-index: 999;
   position: fixed;
-  background-color: rgb(114, 3, 3);
+  background-color: #979BA9;
   top: 0;
   left: 0;
   width: 100%;
@@ -89,6 +91,8 @@ header {
   justify-content: space-between;
   align-items: center;
   transition: 0.5s ease;
+  border-radius: 40px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 2);
 }
 
 header.sticky {
@@ -97,10 +101,9 @@ header.sticky {
 }
 
 header .brand {
-  color: black;
+  color: #3a6cf4;
   font-size: 1.8em;
   font-weight: 700;
-  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -109,10 +112,10 @@ header .navigation {
 }
 
 header .navigation a {
-  color: rgb(68, 0, 0);
+  color: black;
   background-color: white;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
   margin-left: 5px;
   display: inline-block;
@@ -120,9 +123,9 @@ header .navigation a {
   border-radius: 10px;
   text-align: center;
 }
-
-header .navigation a:hover {
-  color: #3a6cf4;
+header .navigation :hover {
+  background-color: #3a6cf4;
+  color: black;
 }
 
 header.sticky .navigation a:hover {
@@ -163,24 +166,24 @@ body {
 
 .abtImage {
   text-align: center;
-  height: 500px;
-  width: 500px;
+  height: 550px;
+  width: 550px;
   margin-top: 30px;
   border-radius: 50%; /* Make the image circular */
-  border: 5px solid #fff; /* Add a white border */
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  border: 1px transparent ; /* Add a white border */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 2); /* Add a shadow effect */
   margin-bottom: 20px;
 }
 
 .abtImage img {
   flex: 1;
   text-align: center;
-  height: 500px;
-  width: 500px;
+  height: 550px;
+  width: 550px;
   margin-top: 30px;
   border-radius: 50%; /* Make the image circular */
-  border: 5px solid #fff; /* Add a white border */
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  border: 1px transparent; /* Add a white border */
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 4); /* Add a shadow effect */
   margin-bottom: 20px;
 }
 
@@ -189,11 +192,11 @@ body {
   background: #235bf6;
 }
 .btn {
-  margin-top: 0px;
+  margin-top: -10px;
   
-  padding: 10px 15px;
+  padding: 5px 10px;
   font-size: 1.2em;
-  border-radius: 20px;
+  border-radius: 15px;
   
 }
 

@@ -5,7 +5,7 @@ const Header = () => {
   
   return (
     <header>
-      <a href="#" className="brand">Asiphe</a>
+      <a href="#" className="brand">A.M</a>
       <div className="menu-btn"></div>
       <div className="navigation">
         <a href="#main">HOME</a>
