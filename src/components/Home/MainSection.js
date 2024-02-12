@@ -1,8 +1,7 @@
 // src/Main.js
 import React from 'react';
 import image from './images/abt.jpg';
-import { FaGithub } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
+import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
 
 const MainSection = () => {
   return (
@@ -27,6 +26,9 @@ const MainSection = () => {
           <a href="https://www.facebook.com/profile.php?id=100092504071844"><FaFacebook style={{ color: '#3b5998', fontSize: '40px' }}/></a>
           </div>
           <div className='github'><a href="https://github.com/AsipheMhambi?tab=repositories"><FaGithub style={{ color: '#24292e', fontSize: '40px' }} /></a>
+          </div>
+          <div className='linkedin'><a href='www.linkedin.com/in/asiphe-mhambi-81504525a'><FaLinkedin  style={{color: '#3b5998', fontSize: '40px'}}/></a>
+
           </div>
         </div>
       <div className='abtImageContainer'>
