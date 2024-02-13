@@ -34,7 +34,9 @@ const MainSection = () => {
       <div className='abtImageContainer'>
       <div className="abtImage">
         <img src={image} alt="Asiphe Mhambi" />
-        <button className="btn">Download CV</button>
+        <div className="hire">
+                <a href="#">Hire me</a>
+            </div>
         </div>
       </div> 
     </section>
