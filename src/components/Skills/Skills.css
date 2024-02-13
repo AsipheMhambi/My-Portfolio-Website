@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.skills {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #333;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  padding: 0 40px;
+}
+
+.content-title {
+  font-size: 20px;
+  color: #555;
+}
+
+.skill {
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+}
+
+.circular-progress {
+    position: relative;
+    height: 120px; /* Decrease the height to reduce the size */
+    width: 120px; /* Decrease the width to reduce the size */
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .circular-progress::before {
+    content: "";
+    position: absolute;
+    height: 80px; /* Adjust the inner circle height */
+    width: 80px; /* Adjust the inner circle width */
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: -1;
+  }
+
+.progress-value {
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+  color: #7d2ae8;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 400;
+  color: #606060;
+}
+
+.col-right {
+  text-align: right;
+}
+
+.react-node .skill:last-child {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.node-node .skill:last-child {
+    margin-top: 60px;
+    text-align: center;
+
+}
+
+.back-end-skills .node-node {
+    margin-right: 30px;
+
+}
