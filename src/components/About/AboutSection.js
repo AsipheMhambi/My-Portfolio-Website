@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css';
 import image from './images/ace.png';
+import { FaGithub, FaFacebook } from "react-icons/fa";
 
 const AboutSection = () => {
   return (
@@ -23,11 +24,13 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-
+      
+      
       <div className='image-container'>
         <div className="aboutImage" />
         <img src={image} alt="Asiphe Mhambi" />
       </div>
+      <p1>Software Developer</p1>
 
       <div className="right-container">
         <div className='right-cont'>
@@ -46,6 +49,13 @@ const AboutSection = () => {
             <p>Come along with me on this adventure through the world of software development. Let's explore together and see what we can create!</p>
           </div>
         </div>
+      </div>
+      <div className="amedia-icons">
+          <div className='facebook'>
+          <a href="https://www.facebook.com/profile.php?id=100092504071844"><FaFacebook style={{ color: '#3b5998', fontSize: '40px' }}/></a>
+          </div>
+          <div className='github'><a href="https://github.com/AsipheMhambi?tab=repositories"><FaGithub style={{ color: '#24292e', fontSize: '40px' }} /></a>
+          </div>
       </div>
     </section>
   );
