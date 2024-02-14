@@ -4,7 +4,7 @@ import './Skills.css';
 const Skill = ({ name, percentage }) => {
   return (
     <div className="skill">
-      <div className="circular-progress" style={{ background: `conic-gradient(#7d2ae8 ${percentage * 3.6}deg, #ededed 0deg)` }}>
+      <div className="circular-progress" style={{ background: `conic-gradient(#3a6cf4 ${percentage * 3.6}deg, #ededed 0deg)` }}>
         <span className="progress-value">{`${percentage}%`}</span>
       </div>
       <span className="text">{name}</span>
