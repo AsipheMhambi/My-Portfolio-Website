@@ -1,8 +1,17 @@
 .contact-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
+    align-items: center;
+    overflow: hidden;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 20px;
+    align-items: center;
+    background-color: #CACAC6;
+    padding-bottom: 50px;
+    border: 2px solid #000;
+    background-image: url('./Images/back.jpg');
+    background-size: cover;;
 }
 
 .contact-form {
