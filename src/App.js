@@ -17,7 +17,7 @@ const App = () => {
       <Header />
       <MainSection />
       <AboutSection />
-      <SkillsSection />
+      <SkillsSection />  
       <ProjectsSection />
       <ContactSection />
       <FooterSection />
