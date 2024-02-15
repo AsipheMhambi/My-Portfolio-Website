@@ -26,11 +26,13 @@ const ContactSection = () => {
     return (
         <section className="contact-section">
             <div className="info-wrap">
+                <div className='info-wrap-cont'>
                 <h3>GET IN TOUCH</h3>
                 <p><strong>Address:</strong> </p>
                 <p><strong>Phone:</strong> </p>
                 <p><strong>Email:</strong> </p>
                 <p><strong>Website:</strong> </p>
+                </div>
             </div>
             <div className="contact-form reveal">
                 <h3>Send Message</h3>
@@ -44,9 +46,9 @@ const ContactSection = () => {
                     <div className="input-box">
                         <textarea name="message" rows="8" cols="80" placeholder="Message" onChange={handleChange}></textarea>
                     </div>
-                    <div className="input-box">
-                        <input type="submit" className="send-btn" value="Send" />
-                    </div>
+                    <div className="send-btn">
+                <a href="#">Send</a>
+            </div>
                 </form>
             </div>
         </section>
