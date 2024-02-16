@@ -15,12 +15,11 @@ const Skill = ({ name, percentage }) => {
 const SkillsSection = () => {
   return (
     <section className="skills" id="skills">
-      <div className="title reveal">
         <h2 className="section-title">My Skills</h2>
-      </div>
-      <div className="content">
-        <div className="column col-left reveal">
-          <h2 className="content-title">Front-end Skills</h2>
+
+        <div className="content">
+        <div className="col-left ">
+          <h2 className="frontend-title">Front-end Skills</h2>
           <div className="front-end-skills">
             <Skill name="HTML & CSS" percentage={95} />
             <Skill name="JavaScript" percentage={80} />
@@ -29,8 +28,9 @@ const SkillsSection = () => {
             <Skill name="React" percentage={75} />
           </div>
         </div>
-        <div className="column col-right reveal">
-          <h2 className="content-title">Back-end Skills</h2>
+
+        <div className="col-right">
+          <h2 className="backend-title">Back-end Skills</h2>
           <div className="back-end-skills">
             <Skill name="Java" percentage={85} />
             <Skill name="Python" percentage={80} />
@@ -39,7 +39,7 @@ const SkillsSection = () => {
             <Skill name="Node.js" percentage={70} />
           </div>
         </div>
-      </div>
+        </div>
     </section>
   );
 };

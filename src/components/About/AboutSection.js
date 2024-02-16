@@ -26,14 +26,14 @@ const AboutSection = () => {
                         <br />
                         <p>Hello, I'm ASIPHE MHAMBI</p>
                         <br />
-                        <p>I studied Information Technology, focusing on Support Services and networking. I earned a national diploma in this field. Now, let me share a bit about my journey in the tech world.</p>
+                        <p>I studied Information Technology, focusing on Support Services and networking. I earned a national diploma in this field. Now, let me share a bit about my journey in the tech world, so that you will get a clear idea about Who I am.</p>
                         <br />
                         
                         <p>I started as a network technician, dealing with the nuts and bolts of computer networks. It was a solid start, and I learned a lot. But, as technology rapidly grew, I felt the urge to try something new.</p>
                         <br />
                         {showMoreStory ? (
                             <>
-                                <p>So, I made a big decision - I switched from being a network technician to becoming a software developer. 
+                                <p>So, I made a big decision switching from being a technician to becoming a software developer. 
                                 <br/>
                                 Why? Well, I saw the tech world changing fast, and I wanted to be part of the group of developers making cool stuff.</p>
                                 <button type="button" onClick={toggleStory}>Read Less</button>
