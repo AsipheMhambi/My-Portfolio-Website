@@ -1,4 +1,24 @@
 /* Header Styling */
+*{
+  /* Default styles for all screens */
+
+/* For screens smaller than 768px (tablets, phones) */
+@media screen and (max-width: 767.98px) {
+  /* Styles for smaller screens */
+}
+
+/* For screens between 768px and 991.98px (small desktops) */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  /* Styles for small desktop screens */
+}
+
+/* For screens larger than 992px (large desktops) */
+@media screen and (min-width: 992px) {
+  /* Styles for large desktop screens */
+}
+
+}
+
 header {
   z-index: 9999; /* Ensure header is on top of all content */
   position: fixed;
