@@ -1,56 +1,58 @@
 /* Header Styling */
 header {
-    z-index: 999;
-    position: fixed;
-    background-color: #979BA9;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s ease;
-    border-radius: 40px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 2);
-  }
-  
-  header.sticky {
-    background: #3a6cf4;
-    padding: 10px 200px;
-  }
-  
-  header .brand {
-    color: #3a6cf4;
-    font-size: 1.8em;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  
-  header .navigation {
-    position: relative;
-  }
-  
-  header .navigation a {
-    color: black;
-    background-color: white;
-    font-size: 1em;
-    font-weight: 700;
-    text-decoration: none;
-    margin-left: 5px;
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 10px;
-    text-align: center;
-  }
-  header .navigation :hover {
-    background-color: #3a6cf4;
-    color: black;
-  }
-  
-  header.sticky .navigation a:hover {
-    color: #000;
-  }
+  z-index: 9999; /* Ensure header is on top of all content */
+  position: fixed;
+  background-color: #979BA9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease;
+  border-radius: 40px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Adjusted box-shadow */
+}
+
+header.sticky {
+  background: #3a6cf4;
+  padding: 15px 20px; /* Adjusted padding */
+}
+
+header .brand {
+  color: #3a6cf4;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+header .navigation {
+  position: relative;
+}
+
+header .navigation a {
+  color: black;
+  background-color: white;
+  font-size: 1em;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 5px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+header .navigation a:hover {
+  background-color: #3a6cf4;
+  color: black;
+}
+
+header.sticky .navigation a:hover {
+  color: #000;
+}
+
   
   /* Main Section Styles */
   .main {

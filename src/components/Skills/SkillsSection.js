@@ -1,6 +1,7 @@
 import React from 'react';
 import './Skills.css';
 
+
 const Skill = ({ name, percentage }) => {
   return (
     <div className="skill">
