@@ -1,107 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-.skills {
-    padding-top: 70px;
-    padding-bottom: 20px;
-    border: 2px solid #000;
-    background-image: url('./Images/back.jpg');
-    background-size: cover;
-}
-
-.section-title {
-  text-align: center;
-}
-
-.title {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.content {
+#skills {
+  width: 100vw;
+  max-width: 60rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: auto;
+}
+
+.skill_container {
+  text-align: center;
+}
+
+.skilltitle {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.skillDec {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.skillImgs {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.skill {
-  display: inline-block;
-  margin: 20px;
+.skillItem {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
   position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
-.circular-progress {
-    position: relative;
-    height: 120px; /* Decrease the height to reduce the size */
-    width: 120px; /* Decrease the width to reduce the size */
-    border-radius: 50%;
-    background: conic-gradient(#3a6cf4 3.6deg, #ededed 0deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-  }
-  
-  .circular-progress::before {
-    content: "";
-    position: absolute;
-    height: 80px; /* Adjust the inner circle height */
-    width: 80px; /* Adjust the inner circle width */
-    border-radius: 50%;
-    background-color: #fff;
-    z-index: -1;
-  }
+.skillImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
 
-.progress-value {
+.skillText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  background: linear-gradient(rgb(2, 192, 250), lightblue);
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.skillItem:hover .skillText {
+  opacity: 1;
+}
+
+.skillItem:hover .skillImg {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .skillItem {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .skillItem {
+    width: 100%;
+  }
+}
+
+.card-container {
+  width: 300px;
+  height: 300px;
   position: relative;
-  font-size: 30px;
-  font-weight: 500;
-  color: #3a6cf4;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
-.text {
-  font-size: 20px;
-  font-weight: 400;
-  color: #606060;
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
 }
 
-.col-right {
-  text-align: right;
-  flex: 1;
-  margin-right: 200px;
+.card .front-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
 }
 
-.col-left {
-  text-align: left;
-  flex: 1;
-  margin-left: 200px;
+.card .front-content p {
+  font-size: 32px;
+  font-weight: 700;
+  opacity: 1;
+  background: linear-gradient(-45deg, #f89b29 0%, lightblue 100% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
 }
 
-.backend-title {
-  margin-right: 60px;
-  margin-top: 50px;
-}
-
-.frontend-title {
-  margin-left: 60px;
-  margin-top: 50px;
-}
-
-.front-end-skills, .back-end-skills {
-  margin-top: 60px;
-}
-
-.react-node .skill:last-child {
-  margin-top: 60px;
+.card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin-left: 90px;
+  gap: 10px;
+  background: linear-gradient(-45deg, #f89b29 0%, lightblue 100% );
+  color: #e8e8e8;
+  padding: 20px;
+  line-height: 1.5;
+  border-radius: 5px;
+  pointer-events: none;
+  transform: translatex(96%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.node-node .skill:last-child {
-    margin-top: 60px;
-    text-align: center;
-margin-right: 90px;
+.card .content .heading {
+  font-size: 32px;
+  font-weight: 700;
 }
 
-.back-end-skills .node-node {
-    margin-right: 30px;
+.card:hover .content {
+  transform: translateY(0);
+}
 
+.card:hover .front-content {
+  transform: translateX(20%);
+}
+
+.card:hover .front-content p {
+  opacity: 0;
 }

@@ -1,116 +1,86 @@
 import React from 'react';
 import './Skills.css';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import skill1Image from './Images/html5.png';
+import skill2Image from './Images/CSS.png';
+import skill3Image from './Images/javascript.jpg';
+import skill4Image from './Images/react.png';
+import skill5Image from './Images/python.jpg';
+import skill6Image from './Images/Java.jpg';
+import skill7Image from './Images/node.png';
 
 const SkillsSection = () => {
   return (
-    <section id="Skills" className="Skills sect-pt4 route">
-      <Container>
-        <Row>
-          <Col sm={12}>
-            <div className="title-box text-center">
-              <h3 className="title-a">Skills</h3>
-              <div className="line-mf"></div>
+    <section id="skills">
+      <div className="skill_container">
+        <h2 className="skilltitle">My skills</h2>
+        <span className="skillDec">These are my skills</span>
+        <div className="skillImgs">
+
+          <div className="skillItem">
+            <img src={skill1Image} alt="" className="skillImg" />
+            <div className="hoverText">
+              <div className="skillText">
+                
+              </div>
             </div>
-          </Col>
-        </Row>
-        <Row>
-          
-          <Col md={4} className="mb-3">
-            <Card style={{ width: '18rem' }}>
-              <Card.Body>
-                <Card.Title>HTML</Card.Title>
-              </Card.Body>
-              <Card.Img
-                variant="top"
-                src={require('./Images/html5.png')}
-                alt="HTML Image"
-              />
-            </Card>
-          </Col>
-          
-          <Col md={4} className="mb-3">
-            <Card style={{ width: '18rem' }}>
-              <Card.Body>
-                <Card.Title>CSS</Card.Title>
-              </Card.Body>
-              <Card.Img
-                variant="top"
-                src={require('./Images/CSS.png')}
-                alt="CSS Image"
-              />
-            </Card>
-          </Col>
+          </div>
 
-          <Col>
-          <Card style={{ width: '18rem' }}>
-              <Card.Body>
-                <Card.Title>JavaScript</Card.Title>
-              </Card.Body>
-              <Card.Img
-                variant="top"
-                src={require('./Images/javascript.png')}
-                alt="JavaScript Image"
-              />
-            </Card>
-            </Col>
+          <div className="skillItem">
+          <img src={skill2Image} alt="" className="skillImg" />
+            <div className="hoverText">
+              <div className="skillText">
+              
+              </div>
+            </div>
+          </div>
 
-            <Col>
-            <Card style={{ width: '18rem' }}>
-              <Card.Body>
-                <Card.Title>React</Card.Title>
-              </Card.Body>
-              <Card.Img
-                variant="top"
-                src={require('./Images/react.png')}
-                alt="React Image"
-              />
-            </Card>
-            </Col>
+          <div className="skillItem">
+          <img src={skill3Image} alt="" className="skillImg" />
+            <div className="hoverText">
+              <div className="skillText">
+               
+              </div>
+            </div>
+          </div>
 
-            <Col>
-            <Card style={{ width: '18rem' }}>
-              <Card.Body>
-                <Card.Title>Python</Card.Title>
-              </Card.Body>
-              <Card.Img
-                variant="top"
-                src={require('./Images/python.png')}
-                alt="Python Image"
-              />
-            </Card>
-            </Col>
+          <div className="skillItem">
+          <img src={skill4Image} alt="" className="skillImg" />
+            <div className="hoverText">
+              <div className="skillText">
+               
+              </div>
+            </div>
+          </div>
 
-            <Col>
-            <Card style={{ width: '18rem' }}>
-              <Card.Body>
-                <Card.Title>Java</Card.Title>
-              </Card.Body>
-              <Card.Img
-                variant="top"
-                src= {require('./Images/Java.jpg')}
-                alt="Java Image"
-              />
-            </Card>
-            </Col>
+          <div className="skillItem">
+          <img src={skill5Image} alt="" className="skillImg" />
+            <div className="hoverText">
+              <div className="skillText">
+               
+              </div>
+            </div>
+          </div>
 
-            <Col>
-            <Card style={{ width: '18rem' }}>
-              <Card.Body>
-                <Card.Title>Node JS</Card.Title>
-              </Card.Body>
-              <Card.Img
-                variant="top"
-                src={require('./Images/node.jpg')}
-                alt="Node JS Image"
-              />
-            </Card>
-            </Col>
-        </Row>
-      </Container>
+          <div className="skillItem">
+          <img src={skill6Image} alt="" className="skillImg" />
+            <div className="hoverText">
+              <div className="skillText">
+               
+              </div>
+            </div>
+          </div>
+          <div className="skillItem">
+            <img src={skill7Image} alt="" className="skillImg" />
+            <div className="hoverText">
+              <div className="skillText">
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
 
 export default SkillsSection;
-
