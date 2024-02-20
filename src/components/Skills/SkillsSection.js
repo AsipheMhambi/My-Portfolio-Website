@@ -50,7 +50,7 @@ const SkillsSection = () => {
               <Card.Img
                 variant="top"
                 src="assets/img/html5-368x246.png"
-                alt="HTML Image"
+                alt="JavaScript Image"
               />
             </Card>
             </Col>
@@ -63,7 +63,7 @@ const SkillsSection = () => {
               <Card.Img
                 variant="top"
                 src="assets/img/html5-368x246.png"
-                alt="HTML Image"
+                alt="React Image"
               />
             </Card>
             </Col>
@@ -76,7 +76,7 @@ const SkillsSection = () => {
               <Card.Img
                 variant="top"
                 src="assets/img/html5-368x246.png"
-                alt="HTML Image"
+                alt="Python Image"
               />
             </Card>
             </Col>
@@ -89,7 +89,7 @@ const SkillsSection = () => {
               <Card.Img
                 variant="top"
                 src="assets/img/html5-368x246.png"
-                alt="HTML Image"
+                alt="Java Image"
               />
             </Card>
             </Col>
@@ -102,7 +102,7 @@ const SkillsSection = () => {
               <Card.Img
                 variant="top"
                 src="assets/img/html5-368x246.png"
-                alt="HTML Image"
+                alt="Node JS Image"
               />
             </Card>
             </Col>
