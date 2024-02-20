@@ -23,7 +23,7 @@ const SkillsSection = () => {
               </Card.Body>
               <Card.Img
                 variant="top"
-                src="assets/img/html5-368x246.png"
+                src={require('./Images/html5.png')}
                 alt="HTML Image"
               />
             </Card>
@@ -36,7 +36,7 @@ const SkillsSection = () => {
               </Card.Body>
               <Card.Img
                 variant="top"
-                src="assets/img/zann.png"
+                src={require('./Images/CSS.png')}
                 alt="CSS Image"
               />
             </Card>
@@ -49,7 +49,7 @@ const SkillsSection = () => {
               </Card.Body>
               <Card.Img
                 variant="top"
-                src="assets/img/html5-368x246.png"
+                src={require('./Images/javascript.png')}
                 alt="JavaScript Image"
               />
             </Card>
@@ -62,7 +62,7 @@ const SkillsSection = () => {
               </Card.Body>
               <Card.Img
                 variant="top"
-                src="assets/img/html5-368x246.png"
+                src={require('./Images/react.png')}
                 alt="React Image"
               />
             </Card>
@@ -75,7 +75,7 @@ const SkillsSection = () => {
               </Card.Body>
               <Card.Img
                 variant="top"
-                src="assets/img/html5-368x246.png"
+                src={require('./Images/python.png')}
                 alt="Python Image"
               />
             </Card>
@@ -88,7 +88,7 @@ const SkillsSection = () => {
               </Card.Body>
               <Card.Img
                 variant="top"
-                src="assets/img/html5-368x246.png"
+                src= {require('./Images/Java.jpg')}
                 alt="Java Image"
               />
             </Card>
@@ -101,7 +101,7 @@ const SkillsSection = () => {
               </Card.Body>
               <Card.Img
                 variant="top"
-                src="assets/img/html5-368x246.png"
+                src={require('./Images/node.jpg')}
                 alt="Node JS Image"
               />
             </Card>
