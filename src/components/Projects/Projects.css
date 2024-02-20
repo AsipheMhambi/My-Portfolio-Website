@@ -15,7 +15,7 @@
 }
 
 .card-list {
-    display: grid;
+    display:flex;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     max-width: 1250px;
     margin: 150px auto;
@@ -55,21 +55,7 @@
     border-radius: 50px;
     font-weight: 600;
 }
-
-.card-list .developer {
-    background-color: #F7DFF5; 
-    color: #B22485;
-}   
-
-.card-list .designer {
-    background-color: #d1e8ff;
-    color: #2968a8;
-}
-
-.card-list .editor {
-    background-color: #d6f8d6; 
-    color: #205c20;
-}
+  
 
 .card-item h3 {
     color: #000;
@@ -78,22 +64,21 @@
     font-weight: 600;
 }
 
-.card-item .arrow {
+.card-item .github {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotate(-35deg);
     height: 40px;
     width: 40px;
-    color: #000;
-    border: 1px solid #000;
+    color: white;
+    border: 1px solid white;
     border-radius: 50%;
     margin-top: 40px;
     transition: 0.2s ease;
 }
 
-.card-list .card-item:hover .arrow  {
-    background: #000;
+.card-list .card-item:hover .github  {
+    background: #fff;
     color: #fff; 
 }
 
