@@ -7,10 +7,10 @@ import project4 from './Images/tax.png';
 
 const ProjectsSection = () => {
   return (
-    <section id="projects">
+    <section className="projects-section"  id="projects">
       <div className="project_container">
         <h2 className="projecttitle">My Projects</h2>
-        <span className="projectDec">What I did to gain experience</span>
+    
         <div className="projectImgs">
           <div className="projectItem">
             <img src={project1} alt="" className="projectImg" />

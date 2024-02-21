@@ -1,21 +1,30 @@
-#projects {
-    width: 100vw;
-    max-width: 60rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: auto;
-  }
+.projects-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  background-image: url('./Images/back.jpg');
+  background-size: cover;
+  padding-bottom: 50px;
+  border: 2px solid #000;
+}
 
   .project_container {
     text-align: center;
+    max-width: 75rem;
+    width: 100%;
+    padding: 0 158px;
+    margin-top: auto;
   }
 
   .projecttitle {
     text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
   }
 
   .projectDec {
@@ -25,8 +34,8 @@
   }
 
   .projectImgs {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -37,18 +46,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
+    padding: 5px 5px;
+    
   }
 
   .projectImg {
-    width: 100%;
+    width: 120%;
     height: 100%;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+    
   }
 
   .projectText {
@@ -133,7 +145,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 10px;
     background: linear-gradient(-45deg, #f89b29 0%, lightblue 100% );
     color: #e8e8e8;
     padding: 20px;
