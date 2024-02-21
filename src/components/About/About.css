@@ -1,78 +1,94 @@
 .about {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    justify-content: space-between;
-    background-color: #cacac6bb;
-    background-image: url('../About/images/back.jpg') ;
-    background-size: cover;
-    padding: 20px;
-    border: 2px solid #000;
-  }
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+  background-color: #cacac6bb;
+  background-image: url('../About/images/back.jpg') ;
+  background-size: cover;
+  padding: 20px;
+  border: 2px solid #000;
+}
 
-  h1 {
-    margin-top: 20px;
-  }
-  
-  .left-container {
-    width: calc(33.33% - 14px); 
-    padding: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
-    transform: rotate(-4deg);
-    background-image: url('../About/images/abtBack.jpg');
-  }
-  
-  .right-container {
-    width: calc(33.33% - 14px); 
-    padding: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
-    transform: rotate(4deg);
-    background-image: url('../About/images/abtBack.jpg');
-  }
-  
-  .left-cont,
-  .right-cont {
-    background-color: #979BA9;
-  }
-  
-  .image-container {
-    width: 310px;
-    height: 310px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto; 
-    overflow: hidden;
-    border-radius: 50%;
-    box-shadow: #979BA9; 
-  }
-  
-  .image-container img.aboutImage {
-    width: 100%; 
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .my-story,
-  .my-journey {
-    font-size: 16px;
-  }
+.about-container {
+  max-width: 100%;
+  margin-top: auto;
+  margin-bottom: 5rem;
+}
 
-  p1 {
-    position: absolute;
-    bottom: 180px;
-    left: 51%;
-    transform: translateX(-50%);
-    text-align: center;
-    font-weight: 700;
-    font-size:x-large;
+.abouttitle {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+
+.containers {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+ 
+
+.left-container {
+  width: calc(33.33% - 14px); 
+  padding: 20px;
+  margin-bottom: 2rem;
+  margin-left: 50px;
+  transform: rotate(-4deg);
+  background-image: url('../About/images/abtBack.jpg');
+}
+
+.right-container {
+  width: calc(33.33% - 14px); 
+  padding: 20px;
+  margin-bottom: 2rem;
+  margin-right: 50px;
+  transform: rotate(4deg);
+  background-image: url('../About/images/abtBack.jpg'); 
+}
+
+.left-cont,
+.right-cont {
+  background-color: #979BA9;
+  width: 100%; 
+  height: 100%;
+}
+
+.image-container {
+  width: 310px;
+  height: 310px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; 
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: #979BA9; 
+}
+
+.image-container img.aboutImage {
+  width: 100%; 
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.my-story,
+.my-journey {
+  font-size: 16px;
+}
+
+p1 {
+  position: absolute;
+  bottom: 180px;
+  left: 51%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-weight: 700;
+  font-size:x-large;
 }
 
 .amedia-icons {
@@ -87,5 +103,3 @@
   display: inline-block;
   margin: 0 50px;
 }
-
-  

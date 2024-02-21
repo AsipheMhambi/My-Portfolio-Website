@@ -323,89 +323,15 @@ header.sticky .navigation a:hover {
   }
 }
 
-/* Hamburger Menu Styles */
-.menu-btn {
-  display: none; /* Hide by default on larger screens */
-  cursor: pointer;
+.media-icons {
+  position: absolute;
+  bottom: 60px;
+  left: 30%;
+  gap: 150px;
+  transform: translateX(-70%);
 }
 
-.menu-icon {
-  width: 30px;
-  height: 4px;
-  background-color: #000;
-  margin: 6px 0;
-  transition: background-color 0.3s ease;
+.media-icons .facebook, .github, .linkedin {
+  display: inline-block;
+  margin: 0 50px;
 }
-
-.menu-btn.active .menu-icon:nth-child(1),
-.menu-btn.active .menu-icon:nth-child(3) {
-  background-color: transparent; /* Set background color for the clicked menu icon */
-}
-
-.menu-btn.active .menu-icon:nth-child(2) {
-  opacity: 0;
-}
-
-/* Rotate the menu icon to an X on click */
-.menu-btn.active .menu-icon:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.menu-btn.active .menu-icon:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
-
-/* Show the menu icon on smaller screens */
-@media screen and (max-width: 768px) {
-  .menu-btn {
-    display: block;
-    margin-right: 10px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 2; /* Ensure the menu icon is on top of the navbar */
-  }
-
-  .navigation {
-    display: none; /* Hide navigation by default on smaller screens */
-    flex-direction: column; /* Align items vertically */
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
-    transition: 0.3s ease;
-    z-index: 1; /* Ensure the navbar is below the menu icon */
-    
-  }
-
-  .menu-btn.active + .navigation {
-    display: flex;
-    background-color: #fff; /* Set the background color for the entire navigation */
-  }
-
-  .navigation a {
-    color: #000;
-    font-size: 1.2em;
-    margin: 10px;
-    padding: 0 20px;
-    border-radius: 20px;
-    text-decoration: none;
-  }
-
-  .navigation a:hover {
-    background-color: #3a6cf4;
-    color: black;
-  }
-}
-
-
-
-
-
-
-
-
