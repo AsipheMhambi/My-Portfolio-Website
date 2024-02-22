@@ -22,7 +22,7 @@ const ContactSection = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+        emailjs.sendForm('service_smaz2tv', 'template_3ulzioe', e.target, 'YHUs78CNHJAZi-QwB')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {

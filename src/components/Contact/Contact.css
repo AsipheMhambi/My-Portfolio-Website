@@ -53,6 +53,18 @@
     resize: none;
 }
 
+.contact-form .send-btn button {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    z-index: 10;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
 .contact-form .send-btn {
     position: relative;
     width: 150px;
@@ -67,6 +79,7 @@
     cursor: pointer;
     bottom: 50px;
     transform: translateX(100%);
+    color: #fff;
 }
 
 .contact-form .send-btn::before {
@@ -90,7 +103,7 @@
 
 .contact-form .send-btn a {
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-size: 1.5em;
     z-index: 10;
     cursor: pointer;
