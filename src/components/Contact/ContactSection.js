@@ -3,6 +3,7 @@ import './Contact.css';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 
+// Define the ContactSection component
 const ContactSection = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -10,6 +11,8 @@ const ContactSection = () => {
         email: '',
         message: ''
     });
+    const [messageSent, setMessageSent] = useState(false);
+    const [shake, setShake] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -19,12 +22,28 @@ const ContactSection = () => {
         });
     };
 
+    const validate = () => {
+        if (!formData.name || !formData.surname || !formData.email || !formData.message) {
+            setShake(true); // Shake the popup if form fields are not filled out
+            setTimeout(() => {
+                setShake(false);
+            }, 500);
+            return false;
+        }
+        return true;
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        if (!validate()) {
+            return;
+        }
 
         emailjs.sendForm('service_smaz2tv', 'template_3ulzioe', e.target, 'YHUs78CNHJAZi-QwB')
             .then((result) => {
                 console.log(result.text);
+                setMessageSent(true); // Set messageSent to true when message is sent successfully
             }, (error) => {
                 console.log(error.text);
             });
@@ -35,6 +54,10 @@ const ContactSection = () => {
             email: '',
             message: ''
         });
+    };
+
+    const handleOkClick = () => {
+        setMessageSent(false); // Close the popup
     };
 
     return (
@@ -81,6 +104,20 @@ const ContactSection = () => {
                     </div>
                 </form>
             </div>
+            {messageSent && (
+                <div className={`popup ${shake ? 'shake' : ''}`}>
+                    <div className="popup-content">
+                        <div className="celebration-animation">🎉</div>
+                        <div className="message">Message sent successfully!</div>
+                        <button onClick={handleOkClick}>Ok</button>
+                    </div>
+                </div>
+            )}
+            <footer className="footer">
+                <div className="footer-text">
+                    © 2024 Asiphe Mhambi | Designed by Asiphe Mhambi
+                </div>
+            </footer>
         </section>
     );
 };
