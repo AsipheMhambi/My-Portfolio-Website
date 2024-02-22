@@ -14,6 +14,24 @@ const Section = styled.section`
 `;
 
 const MainSection = () => {
+  const handleDownloadClick = (e) => {
+    // Prevent the default link behavior
+    e.preventDefault();
+
+    // Show confirmation dialog
+    const userConfirmed = window.confirm("Download Resume?");
+
+    if (userConfirmed) {
+      // User clicked 'Yes', trigger the download
+      const link = document.createElement('a');
+      link.href = e.target.href; // Assuming the href has been set to the resume's URL
+      link.download = 'Asiphe_Resume.pdf'; // Specify the download file name
+      document.body.appendChild(link); // Append to body
+      link.click(); // Programmatically click the link to trigger the download
+      document.body.removeChild(link); // Clean up
+    }
+  };
+
   return (
     <Section className="main" id="main">
       <div className="content">
@@ -35,16 +53,18 @@ const MainSection = () => {
         <div className='facebook'>
           <a href="https://www.facebook.com/profile.php?id=100092504071844"><FaFacebook style={{ color: '#3b5998', fontSize: '40px' }}/></a>
         </div>
-        <div className='github'><a href="https://github.com/AsipheMhambi?tab=repositories"><FaGithub style={{ color: '#24292e', fontSize: '40px' }} /></a>
+        <div className='github'>
+          <a href="https://github.com/AsipheMhambi?tab=repositories"><FaGithub style={{ color: '#24292e', fontSize: '40px' }} /></a>
         </div>
-        <div className='linkedin'><a href='www.linkedin.com/in/asiphe-mhambi-81504525a'><FaLinkedin  style={{color: '#3b5998', fontSize: '40px'}}/></a>
+        <div className='linkedin'>
+          <a href='www.linkedin.com/in/asiphe-mhambi-81504525a'><FaLinkedin  style={{color: '#0e76a8', fontSize: '40px'}}/></a>
         </div>
       </div>
       <div className='abtImageContainer'>
         <div className="abtImage">
           <img src={image} alt="Asiphe Mhambi" />
           <div className="hire">
-            <a href="#">Hire me</a>
+            <a href={`${process.env.PUBLIC_URL}/Asiphe_Resume.pdf`} onClick={handleDownloadClick}>Hire me</a>
           </div>
         </div>
       </div> 
