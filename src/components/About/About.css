@@ -105,3 +105,43 @@ p1 {
   display: inline-block;
   margin: 0 50px;
 }
+
+@media only screen and (max-width: 1024px){
+  .left-container, .right-container {
+    width: calc(50.80% - 70px);
+    
+  }
+
+  .left-container{
+    transform: rotate(-3deg);
+  }
+  .right-container{
+    transform: rotate(3deg);
+  }
+
+  .image-container {
+    width: 510px;
+    height: 310px;
+    
+  }
+
+  .my-journey, .my-story {
+    font-size: 15px;
+    
+  }
+
+  .left-cont, .right-cont {
+    height: 100%;
+    width: 100%;
+  
+  }
+
+  .containers {
+    margin-bottom: 4rem;
+  }
+
+  p1 {
+    margin-bottom: 22rem;
+  }
+
+}
