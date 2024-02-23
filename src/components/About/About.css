@@ -108,15 +108,17 @@ p1 {
 
 @media only screen and (max-width: 1024px){
   .left-container, .right-container {
-    width: calc(50.80% - 70px);
+    height: 500px;
     
   }
 
   .left-container{
     transform: rotate(-3deg);
+    height: fit-content;
   }
   .right-container{
     transform: rotate(3deg);
+    height:fit-content
   }
 
   .image-container {
@@ -126,7 +128,8 @@ p1 {
   }
 
   .my-journey, .my-story {
-    font-size: 15px;
+    font-size: 12px;
+    
     
   }
 
@@ -136,12 +139,47 @@ p1 {
   
   }
 
+  .abouttitle{
+    margin-top: 3rem;
+  }
+
   .containers {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
   }
 
   p1 {
-    margin-bottom: 22rem;
+    margin-bottom: 5rem;
   }
 
 }
+
+@media only screen and (max-width: 768px){
+
+  .left-container, .right-container {
+    height: 450px;
+    width: -300px;
+  }
+
+  .my-journey, .my-story {
+    font-size: 10.2px;
+  }
+
+  .image-container {
+    margin-bottom: 4rem;
+  }
+
+  .containers{
+    margin-top:2rem;
+  }
+
+  p1 {
+    margin-top: 6rem;
+  }
+
+}
+
+
+
+
+
+  

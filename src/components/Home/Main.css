@@ -360,7 +360,7 @@ header.sticky .navigation a:hover {
 }
 
 /* For screens smaller than 480px */
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 480px) {
   header {
     padding: 8px 12px;
     border-radius: 20px;
@@ -406,6 +406,36 @@ header.sticky .navigation a:hover {
   .abtImage {
     width: 250px;
     height: 250px;
+  }
+
+  .media-icons {
+    position: absolute;
+    bottom: 60px;
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+}
+
+
+  
+  .media-icons .facebook, .github, .linkedin {
+    display: inline-block;
+  }
+
+  .media-icons .github {
+    margin-left: -50px;
+  }
+
+  .hire {
+    width: 100px;
+    height: 40px;
+    margin-top: 40px;
+    bottom: 50px;
+    transform: translateX(75%);
+  }
+
+  .hire a{
+    font-size: 1rem;
   }
 
 }
