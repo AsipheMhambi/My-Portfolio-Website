@@ -178,6 +178,72 @@ p1 {
 
 }
 
+@media only screen and (max-width: 480px) {
+
+    .left-container, .right-container {
+      background-color: none;
+      background-image: none;
+      background: none;
+      box-shadow: none;
+      transform: rotate(0deg);
+    }
+  
+    .image-container {
+      position: absolute;
+      width: 310px;
+      height: 310px;
+      margin: 0 auto; 
+      overflow: hidden;
+      border-radius: 70%;
+      box-shadow: #979BA9; 
+      margin-top: -4rem;
+    }
+    
+    .image-container img {
+      width: 70%; 
+      height: 90%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    
+  
+    .left-cont, .right-cont {
+      
+      width: 170px;
+      height: fit-content;
+      display: block; 
+      margin-top: 15rem; 
+      margin-left: -4.6rem;
+      gap: 1rem;
+
+    }
+
+    .right-cont {
+      margin-left: -30px;
+    }
+
+    p1 {
+      display: none;
+    }
+
+    .amedia-icons {
+      position: absolute;
+      bottom: 60px;
+      left: 55%;
+      gap: 50px;
+      transform: translateX(5%);
+      transform: translatey(160%);
+    }
+    
+    .amedia-icons .facebook, .github {
+      display: inline-block;
+      margin: 0 50px;
+    }
+    
+  }
+  
+
 
 
 
