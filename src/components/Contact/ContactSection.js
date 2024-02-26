@@ -32,7 +32,7 @@ const ContactSection = () => {
 
     const validate = () => {
         if (!formData.name || !formData.surname || !formData.email || !formData.message) {
-            setShake(true); // Shake the popup if form fields are not filled out
+            setShake(true); 
             setTimeout(() => setShake(false), 500);
             return false;
         }
@@ -54,8 +54,8 @@ const ContactSection = () => {
             .then((result) => {
                 console.log(result.text);
                 setMessageSent(true);
-                setFormData({ name: '', surname: '', email: '', message: '' }); // Reset form
-                recaptchaRef.current.reset(); // Reset reCAPTCHA
+                setFormData({ name: '', surname: '', email: '', message: '' }); 
+                recaptchaRef.current.reset(); 
             }, (error) => {
                 console.log(error.text);
             });

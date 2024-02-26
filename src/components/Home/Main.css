@@ -294,6 +294,32 @@ header.sticky .navigation a:hover {
 }
 /* For screens smaller than 768px */
 @media only screen and (max-width: 768px) {
+  header .navigation {
+    font-size: 1.5rem;
+    gap: 40px;
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #979BA9; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 999; 
+    transform: translateY(-100%); 
+    transition: transform 0.3s ease; 
+  }
+
+  header .menu-btn.active ~ .navigation {
+    display: flex; 
+    transform: translateY(0); 
+  }
+
+  header .menu-btn.active .menu-icon {
+    background-color: black; 
+  }
   
   .abtImageContainer {
     text-align: center;
@@ -357,7 +383,49 @@ header.sticky .navigation a:hover {
     display: inline;
     margin-left: 5rem;
   }
+  header .navigation {
+    display: none; 
+  }
+
+  header .menu-btn {
+    display: block; 
+  }
+
+  header .navigation.active {
+    display: block; 
+  }
+
+  header .menu-btn.active .menu-icon {
+    background-color: black; 
+  }
 }
+
+/* Hamburger Menu Styles */
+.menu-btn {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.menu-btn.active .menu-icon:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-btn.active .menu-icon:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.active .menu-icon:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 
 /* For screens smaller than 480px */
 @media only screen and (max-width: 480px) {

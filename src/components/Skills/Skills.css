@@ -86,6 +86,7 @@
 @media screen and (max-width: 768px) {
   .skillItem {
     width: calc(50% - 20px);
+  
   }
 }
 

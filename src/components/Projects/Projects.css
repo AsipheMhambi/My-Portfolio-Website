@@ -16,7 +16,7 @@
     text-align: center;
     max-width: 75rem;
     width: 100%;
-    padding: 0 158px;
+    padding: 0 20px;
     margin-top: auto;
   }
 
@@ -90,7 +90,8 @@
 
   @media screen and (max-width: 768px) {
     .projectItem {
-      width: 45%;
+      width: calc(50% - 20px);
+      margin-bottom: 7rem;
     }
   }
 @media screen and (max-width: 480px) {
@@ -170,4 +171,9 @@
 
   .card:hover .front-content p {
     opacity: 0;
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    
   }
