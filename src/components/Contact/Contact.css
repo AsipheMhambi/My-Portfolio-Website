@@ -232,5 +232,19 @@
     20%, 40%, 60%, 80%, 100% { transform: translateX(10px); }
 }
 
+@media (max-width: 768px) {
+    .contact-form {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        max-width: 100%;
+    }
+    .info-wrap {
+        margin-left: 20px;
+        padding: 40px;
+    }
+}
+
+
 
 
