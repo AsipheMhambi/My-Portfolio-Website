@@ -3,8 +3,11 @@ import './Contact.css';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 import ReCAPTCHA from "react-google-recaptcha";
+import "@fontsource/playfair-display"; 
+import "@fontsource/playfair-display/400-italic.css"; 
 
-// Your Google reCAPTCHA site key here
+
+
 const RECAPTCHA_SITE_KEY = '6LeB9X8pAAAAAMXJD_kXITEIgxIXKNFVZDr3-xcm';
 
 const ContactSection = () => {
@@ -68,7 +71,7 @@ const ContactSection = () => {
     return (
         <section className="contact-section" id="contact">
             <div className="info-wrap">
-                {/* Contact info here */}
+                
                 <div className="left-side">
                     <div className="address details">
                         <FaMapMarkerAlt size={50} />
