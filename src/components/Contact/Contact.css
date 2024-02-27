@@ -233,15 +233,40 @@
 }
 
 @media (max-width: 768px) {
-    .contact-form {
-        margin-right: 20px;
-        margin-bottom: 20px;
-        padding: 20px;
-        max-width: 100%;
+
+    .contact-section {
+        flex-direction: column; 
+        justify-content: center; 
+        padding: 20px 10px; 
     }
-    .info-wrap {
-        margin-left: 20px;
-        padding: 40px;
+    .contact-form h3, .info-wrap .details .topic {
+        font-size: 1.2em; 
+    }
+
+    .contact-form .input-box input,
+    .contact-form .input-box textarea,
+    .contact-form .send-btn button {
+        font-size: 0.9em; 
+    }
+    .contact-form, .info-wrap {
+        margin: 20px 10px;
+        padding: 20px;
+        max-width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form, .info-wrap {
+        margin: 10px; 
+        padding: 15px; 
+    }
+
+    .contact-form h3, .info-wrap .details .topic {
+        font-size: 1em;
+    }
+
+    .contact-section {
+        padding: 15px 5px; 
     }
 }
 
