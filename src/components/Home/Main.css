@@ -159,6 +159,8 @@ header.sticky .navigation a:hover {
 .abtImageContainer {
   text-align: center;
   margin-right: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .abtImage {
